@@ -9,8 +9,14 @@
     "lint": "next lint",
     "start": "next start",
     "prepare": "is-ci || husky install",
+    "pretty": "prettier --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "lint-staged": {
+    "*.{tsx,ts,js,css,json,mdx}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
@@ -51,6 +57,7 @@
     "eslint-plugin-storybook": "^0.6.11",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
+    "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.1.0",
     "prettier": "^2.8.6",
