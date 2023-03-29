@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "pnpm /^watch:.*/",
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
     "prepare": "is-ci || husky install",
     "pretty": "prettier --write .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "watch:typesafe-i18n": "typesafe-i18n",
+    "watch:next": "next dev"
   },
   "lint-staged": {
     "*.{tsx,ts,js,css,json,mdx}": [
@@ -31,6 +33,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.2",
+    "typesafe-i18n": "^5.24.3",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -43,6 +46,7 @@
     "@storybook/nextjs": "^7.0.0-rc.8",
     "@storybook/react": "^7.0.0-rc.8",
     "@storybook/testing-library": "^0.0.14-next.1",
+    "@svgr/webpack": "^7.0.0",
     "@types/eslint": "^8.21.3",
     "@types/node": "^18.15.5",
     "@types/prettier": "^2.7.2",

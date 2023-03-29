@@ -1,11 +1,13 @@
 import { PropsWithChildren } from 'react'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <>
-      <div>navbar</div>
+    <div className=' grid h-screen grid-cols-1 grid-rows-body'>
+      <Navbar />
       <main>{children}</main>
-      <div>footer</div>
-    </>
+      <Footer />
+    </div>
   )
 }

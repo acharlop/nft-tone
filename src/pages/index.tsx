@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { signIn, signOut, useSession } from 'next-auth/react'
 
 import { api } from '~/utils/api'
+import { getI18nProps } from '~/i18n/i18n-props'
+
+export const getStaticProps = getI18nProps
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: 'from tRPC' })
