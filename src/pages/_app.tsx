@@ -12,11 +12,13 @@ import Layout from '~/layout'
 
 import '~/styles/globals.css'
 import TypesafeI18n from '~/i18n/i18n-react'
+import { useRouter } from 'next/router'
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }: AppProps) => {
+  const { pathname } = useRouter()
   // i18n
   const locale: Locales = pageProps.i18n?.locale
   const dictionary: Translation = pageProps.i18n?.dictionary
@@ -28,7 +30,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <Translation locale={locale}>
-        <Layout>
+        <Layout hideFooter={pathname === '/login'}>
           <Component {...pageProps} />
         </Layout>
       </Translation>

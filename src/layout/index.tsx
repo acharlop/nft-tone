@@ -2,12 +2,16 @@ import { PropsWithChildren } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
-export default function Layout({ children }: PropsWithChildren) {
+interface Props extends PropsWithChildren {
+  hideFooter?: boolean
+}
+
+export default function Layout({ children, hideFooter }: Props) {
   return (
-    <div className=' grid h-screen grid-cols-1 grid-rows-body'>
+    <div className='grid h-screen w-screen grid-cols-1 grid-rows-main'>
       <Navbar />
-      <main>{children}</main>
-      <Footer />
+      <div className='w-full'>{children}</div>
+      {!hideFooter && <Footer />}
     </div>
   )
 }

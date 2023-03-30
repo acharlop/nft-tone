@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel__dot--selected {
+  @apply bg-primary-500;
+}
