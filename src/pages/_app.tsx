@@ -7,6 +7,21 @@ import { api } from '~/utils/api'
 import { Locales, Translation } from '~/i18n/i18n-types'
 import { loadedLocales } from '~/i18n/i18n-util'
 import { loadFormatters } from '~/i18n/i18n-util.sync'
+import { Raleway, Heebo } from 'next/font/google'
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-raleway',
+  display: 'swap',
+})
+
+const heebo = Heebo({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-heebo',
+  display: 'swap',
+})
 
 import Layout from '~/layout'
 
@@ -30,9 +45,11 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <Translation locale={locale}>
-        <Layout hideFooter={pathname === '/login'}>
-          <Component {...pageProps} />
-        </Layout>
+        <div className={`${raleway.variable} ${heebo.variable} font-sans`}>
+          <Layout hideFooter={pathname === '/login'}>
+            <Component {...pageProps} />
+          </Layout>
+        </div>
       </Translation>
     </SessionProvider>
   )

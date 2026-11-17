@@ -1,0 +1,190 @@
+{
+  "color": {
+    "play button dark purple": {
+      "0": {
+        "type": "color",
+        "value": "#23246566",
+        "blendMode": "normal"
+      },
+      "1": {
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 226.12330495523133,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#4245c1"
+            },
+            {
+              "position": 1,
+              "color": "#5254eecc"
+            }
+          ]
+        }
+      }
+    },
+    "button light": {
+      "0": {
+        "type": "color",
+        "value": "#ffffff0d",
+        "blendMode": "normal"
+      },
+      "1": {
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 228.96240512852023,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#999af652"
+            },
+            {
+              "position": 1,
+              "color": "#ffffff00"
+            }
+          ]
+        }
+      }
+    },
+    "play button dark neutral": {
+      "0": {
+        "type": "color",
+        "value": "#23246566",
+        "blendMode": "normal"
+      },
+      "1": {
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 226.12330495523133,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#3b3c6fcc"
+            },
+            {
+              "position": 1,
+              "color": "#38396d00"
+            }
+          ]
+        }
+      }
+    },
+    "button purple": {
+      "0": {
+        "type": "color",
+        "value": "#5d5fef99",
+        "blendMode": "normal"
+      },
+      "1": {
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 227.5277302576968,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#5d5fefd9"
+            },
+            {
+              "position": 1,
+              "color": "#5d5fef00"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "grid": {
+    "1440 - 900": {
+      "description": null,
+      "type": "custom-grid",
+      "value": {
+        "pattern": "columns",
+        "gutterSize": 24,
+        "alignment": "stretch",
+        "count": 12,
+        "offset": 64
+      }
+    },
+    "1920- 1080": {
+      "description": null,
+      "type": "custom-grid",
+      "value": {
+        "pattern": "columns",
+        "sectionSize": 96,
+        "gutterSize": 32,
+        "alignment": "center",
+        "count": 12
+      }
+    }
+  },
+  "font": {
+    "paragraph": {
+      "type": "custom-fontStyle",
+      "value": {
+        "fontSize": 24,
+        "textDecoration": "none",
+        "fontFamily": "Raleway",
+        "fontWeight": 500,
+        "fontStyle": "normal",
+        "fontStretch": "normal",
+        "letterSpacing": 0.48,
+        "lineHeight": 36,
+        "paragraphIndent": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none"
+      }
+    }
+  },
+  "typography": {
+    "paragraph": {
+      "fontSize": {
+        "type": "dimension",
+        "value": 24
+      },
+      "textDecoration": {
+        "type": "string",
+        "value": "none"
+      },
+      "fontFamily": {
+        "type": "string",
+        "value": "Raleway"
+      },
+      "fontWeight": {
+        "type": "number",
+        "value": 500
+      },
+      "fontStyle": {
+        "type": "string",
+        "value": "normal"
+      },
+      "fontStretch": {
+        "type": "string",
+        "value": "normal"
+      },
+      "letterSpacing": {
+        "type": "dimension",
+        "value": 0.48
+      },
+      "lineHeight": {
+        "type": "dimension",
+        "value": 36
+      },
+      "paragraphIndent": {
+        "type": "dimension",
+        "value": 0
+      },
+      "paragraphSpacing": {
+        "type": "dimension",
+        "value": 0
+      },
+      "textCase": {
+        "type": "string",
+        "value": "none"
+      }
+    }
+  }
+}
